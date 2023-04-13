@@ -8,7 +8,7 @@ const Navbar = () => {
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand">
+      <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           Peter Jacobs
         </Link>

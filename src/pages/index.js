@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../layouts/'
 import '../styles/global.scss'
+import Seo from '../components/seo'
 
 const IndexPage = () => {
   return (
@@ -24,6 +25,7 @@ const IndexPage = () => {
     </Layout>
   )
 }
-export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <Seo title="Home Page" />
+
+export default IndexPage
