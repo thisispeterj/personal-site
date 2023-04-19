@@ -5,7 +5,9 @@ import Seo from '../../components/seo'
 const ContactPage = () => {
   return (
     <Layout>
-      <h1>Contact Page</h1>
+      <section className="container is-max-desktop">
+        <h1 className="title is-1">Contact Me</h1>
+      </section>
     </Layout>
   )
 }

@@ -5,7 +5,9 @@ import Seo from '../../components/seo'
 const ProjectsPage = () => {
   return (
     <Layout>
-      <h1>My Projects</h1>
+      <section className="container is-max-desktop">
+        <h1 className="title is-1">My Projects</h1>
+      </section>{' '}
     </Layout>
   )
 }

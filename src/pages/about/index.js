@@ -37,8 +37,8 @@ const AboutPage = () => {
           </div>
           <div className="column">
             <StaticImage
-              alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-              src="../../images/peter.jpg"
+              alt="Picture of Peter Jacobs QA Engineer and Front End Developer"
+              src="../../assets/images/peter.jpg"
             />
           </div>
         </div>

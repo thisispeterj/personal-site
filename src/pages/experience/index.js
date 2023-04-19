@@ -57,6 +57,7 @@ const ExperiencePage = () => {
   return (
     <Layout>
       <Container className="container is-max-desktop">
+        <h1 className="title is-1">My Work Experience</h1>
         <Columns>
           <Columns.Column size={3}>
             <Scrollspy

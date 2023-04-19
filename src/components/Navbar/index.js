@@ -27,7 +27,12 @@ const Navbar = () => {
           <Link to="../contact" className="navbar-item">
             Contact
           </Link>
-          <Link to="../#" className="navbar-item button">
+          <Link
+            to="../../assets/images/peter.jpg"
+            className="navbar-item button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume
           </Link>
         </div>
