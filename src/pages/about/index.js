@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Layout from '../../layouts'
-import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../../components/seo'
 
 const AboutPage = () => {
@@ -36,9 +35,9 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="column">
-            <StaticImage
-              alt="Picture of Peter Jacobs QA Engineer and Front End Developer"
-              src="../../assets/images/peter.jpg"
+            <img
+              alt="Peter Jacobs QA Engineer and Front End Developer"
+              src="/assets/images/peter.jpg"
             />
           </div>
         </div>
