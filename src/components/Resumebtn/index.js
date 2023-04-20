@@ -6,8 +6,11 @@ const Resumebtn = () => {
   }
 
   return (
-    <button className="navbar-item button" onClick={handleResumeClick}>
-      Resume
+    <button
+      className="button is-primary is-light is-small"
+      onClick={handleResumeClick}
+    >
+      <strong>Resume</strong>
     </button>
   )
 }

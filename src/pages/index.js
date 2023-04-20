@@ -6,21 +6,28 @@ import Seo from '../components/seo'
 const IndexPage = () => {
   return (
     <Layout>
-      <section className="hero is-large">
-        <div className="hero-body">
-          <div className="container is-max-desktop">
-            <p className="title is-1 is-spaced">Peter Jacobs</p>
-            <p className="title is-4 is-spaced">
-              QA Engineer and Front End Developer
-            </p>
-            <p className="subtitle is-5 is-spaced">
+      <section className="hero is-primary">
+        <div className="hero-head"></div>
+        <div className="hero-body columns is-vcentered">
+          <div className="column is-three-fifths">
+            <h1 className="title">Peter Jacobs</h1>
+            <h2 className="title">QA Engineer and Front End Developer</h2>
+            <p className="subtitle">
               As a QA engineer, my mission is to ensure the highest quality
               standards for web applications through rigorous testing
               methodologies, promoting continuous improvement, and maintaining a
               customer-centric approach. I also like to build things.
             </p>
           </div>
+          <div className="column is-two-fifths">
+            <img
+              className="hero-portrait"
+              src="/assets/images/portrait.jpg"
+              alt="AI generated portrait of Peter Jacobs"
+            />
+          </div>
         </div>
+        <div className="hero-foot"></div>
       </section>
     </Layout>
   )

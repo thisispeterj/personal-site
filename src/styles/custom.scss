@@ -1,6 +1,46 @@
-// Import a Google Font
-// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+$brand-font: 'Secular One', sans-serif;
 
-// Set your brand colors
+// Colors
+$fire-red: #bf4949;
+$primary: $fire-red;
 
-// Update Bulma's global variables
+// Navigation
+.navbar-brand {
+  font-family: $brand-font;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px #792020;
+}
+
+// Home Page
+.hero-portrait {
+  border-left-color: #e85555;
+  border-left-style: groove;
+  border-left-width: 20px;
+}
+//Footer
+//$footer-background-color:
+//$footer-color:
+//$footer-padding:
+
+// // Update Bulma's global variables
+// body {
+//   background: linear-gradient(-45deg, #0077b5, #0099cc, #23a6d5, #23d5ab);
+//   background-size: 400% 400%;
+//   animation: gradient 15s ease infinite;
+//   height: 100vh;
+// }
+
+// @keyframes gradient {
+//   0% {
+//     background-position: 0% 50%;
+//   }
+//   50% {
+//     background-position: 100% 50%;
+//   }
+//   100% {
+//     background-position: 0% 50%;
+//   }
+// }
