@@ -11,9 +11,12 @@ const Navbar = () => {
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          Peter Jacobs
+      <div className="navbar-brand ml-6">
+        <Link
+          to="/"
+          className="navbar-item is-size-1 is-uppercase has-text-weight-bold"
+        >
+          PJ
         </Link>
         <Link>
           <a
@@ -29,11 +32,8 @@ const Navbar = () => {
           </a>
         </Link>
       </div>
-      <div
-        id="navbarBasicExample"
-        className={`navbar-menu ${isActive ? 'is-active' : ''}`}
-      >
-        <div className="navbar-end">
+      <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+        <div className="navbar-end mr-6">
           <Link to="../about" className="navbar-item">
             About
           </Link>

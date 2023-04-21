@@ -2,45 +2,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 $brand-font: 'Secular One', sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+$hero-font: 'Poppins', sans-serif;
+
 // Colors
 $fire-red: #bf4949;
 $primary: $fire-red;
 
 // Navigation
-.navbar-brand {
+
+.navbar-brand .navbar-item {
   font-family: $brand-font;
-  font-size: 2.5rem;
-  color: white;
   text-shadow: 2px 2px 4px #792020;
 }
 
 // Home Page
+.hero-title {
+  font-family: $hero-font;
+}
+.hero-title h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.hero-title h1 span {
+  color: black;
+}
+.hero-title h2 {
+  font-size: 1.5rem;
+}
+
 .hero-portrait {
   border-left-color: #e85555;
   border-left-style: groove;
   border-left-width: 20px;
+  box-shadow: 13px 11px 10px #792020;
 }
+
+// About Page
+.hero-background {
+  background-image: url('../../static/assets/images/working.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #792020;
+  background-blend-mode: screen;
+}
+
+.hero-background .column {
+  background-color: rgba($color: black, $alpha: 0.7);
+  border-radius: 5px;
+}
+
+// Contact Page
+.column.follow-me {
+  border-left: 4px solid black;
+}
+
 //Footer
-//$footer-background-color:
-//$footer-color:
-//$footer-padding:
-
-// // Update Bulma's global variables
-// body {
-//   background: linear-gradient(-45deg, #0077b5, #0099cc, #23a6d5, #23d5ab);
-//   background-size: 400% 400%;
-//   animation: gradient 15s ease infinite;
-//   height: 100vh;
-// }
-
-// @keyframes gradient {
-//   0% {
-//     background-position: 0% 50%;
-//   }
-//   50% {
-//     background-position: 100% 50%;
-//   }
-//   100% {
-//     background-position: 0% 50%;
-//   }
-// }
+$footer-background-color: #222;
+$footer-color: #888;
+$footer-padding: 3rem 1.5rem 4rem;
