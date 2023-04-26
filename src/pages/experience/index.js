@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Layout from '../../layouts'
-import { Container, Columns } from 'react-bulma-components'
 import Scrollspy from 'react-scrollspy'
 import Seo from '../../components/seo'
+import '../../styles/global.scss'
 
 const workExperience = [
   {
@@ -57,41 +57,59 @@ const ExperiencePage = () => {
 
   return (
     <Layout>
-      <div className="hero is-medium">
-        <h1 className="title is-1 has-text-centered">Work Experience</h1>
-
-        <div className="hero-body">
-          <Container className="container box is-max-desktop">
-            <Columns>
-              <Columns.Column size={3}>
+      <section className="hero is-large p-6">
+        <div className="hero-head">
+          <h1 className="title is-1 has-text-centered">Work Experience</h1>
+          <div className="container box is-max-desktop">
+            <div className="columns">
+              <div className="column is-one-quarter">
                 <Scrollspy
                   items={workExperience.map((exp) => exp.id)}
                   currentClassName="is-active"
                 >
                   {workExperience.map((exp) => (
-                    <li key={exp.id}>
-                      <a onClick={() => handleMenuClick(exp.id)}>
+                    <li
+                      className="button is-primary is-fullwidth mb-3"
+                      key={exp.id}
+                    >
+                      <a
+                        className="has-text-white"
+                        onClick={() => handleMenuClick(exp.id)}
+                      >
                         {exp.company}
                       </a>
                     </li>
                   ))}
                 </Scrollspy>
-              </Columns.Column>
-              <Columns.Column size={9}>
-                <h1>Company: {activeWorkExperience.company}</h1>
-                <h2>Title: {activeWorkExperience.title}</h2>
-                <p>Description: {activeWorkExperience.description}</p>
-                <p>Date: {activeWorkExperience.duration}</p>
+              </div>
+              <div className="column is-three-quarters">
+                <h3 className="mb-2">
+                  <span className="subtitle">Company: </span>
+                  {activeWorkExperience.company}
+                </h3>
+                <h3 className="mb-2">
+                  <span className="subtitle">Title: </span>
+                  {activeWorkExperience.title}
+                </h3>
+                <h3 className="mb-2">
+                  <span className="subtitle">Description: </span>
+                  {activeWorkExperience.description}
+                </h3>
+                <h3 className="mb-2">
+                  <span className="subtitle">Date: </span>
+                  {activeWorkExperience.duration}
+                </h3>
                 <ul>
                   {activeWorkExperience.responsibilities.map((resp) => (
                     <li key={resp}>{resp}</li>
                   ))}
                 </ul>
-              </Columns.Column>
-            </Columns>
-          </Container>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="hero-foot"></div>
+      </section>
     </Layout>
   )
 }

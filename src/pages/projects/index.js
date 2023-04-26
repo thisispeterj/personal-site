@@ -6,7 +6,7 @@ import Seo from '../../components/seo'
 const ProjectsPage = ({ data }) => {
   return (
     <Layout>
-      <section className="container is-max-desktop">
+      <section className="container is-max-desktop p-6">
         <h1 className="title is-1">My Projects</h1>
         <div className="tile-container columns is-multiline">
           {data.allMdx.nodes.map((node) => (

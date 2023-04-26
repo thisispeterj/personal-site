@@ -1,6 +1,12 @@
 import React from 'react'
 import Layout from '../../layouts'
 import Seo from '../../components/seo'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faLinkedin,
+  faCodepen,
+} from '@fortawesome/free-brands-svg-icons'
 
 const ContactPage = () => {
   return (
@@ -77,31 +83,35 @@ const ContactPage = () => {
             </form>
           </div>
           <div className="column p-6">
-            <h1 className="title">Follow Me</h1>
-            <p>
-              Ut dolore in laborum officia laboris nisi. Nostrud do adipisicing
-              mollit et occaecat officia ea ad. Est occaecat laboris tempor nisi
-              sint. Ea commodo Lorem laborum aliquip consectetur nisi occaecat
-              incididunt.
-            </p>
-            <p>
-              Ut dolore in laborum officia laboris nisi. Nostrud do adipisicing
-              mollit et occaecat officia ea ad. Est occaecat laboris tempor nisi
-              sint. Ea commodo Lorem laborum aliquip consectetur nisi occaecat
-              incididunt.
-            </p>
-            <p>
-              Ut dolore in laborum officia laboris nisi. Nostrud do adipisicing
-              mollit et occaecat officia ea ad. Est occaecat laboris tempor nisi
-              sint. Ea commodo Lorem laborum aliquip consectetur nisi occaecat
-              incididunt.
-            </p>
-            <p>
-              Ut dolore in laborum officia laboris nisi. Nostrud do adipisicing
-              mollit et occaecat officia ea ad. Est occaecat laboris tempor nisi
-              sint. Ea commodo Lorem laborum aliquip consectetur nisi occaecat
-              incididunt.
-            </p>
+            <div className="container">
+              <h1 className="title mb-6">Follow Me</h1>
+              <ul>
+                <li className="mb-6">
+                  <a href="https://github.com/peterjweb/">
+                    <span className="icon fa-2xl has-text-black">
+                      <FontAwesomeIcon icon={faGithub} />
+                    </span>
+                    <span className="ml-4 has-text-black">Fork Me</span>
+                  </a>
+                </li>
+                <li className="mb-6">
+                  <a href="https://www.linkedin.com/in/peterjweb/">
+                    <span className="icon fa-2xl has-text-black">
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </span>
+                    <span className="ml-4 has-text-black">Hire Me</span>
+                  </a>
+                </li>
+                <li className="mb-6">
+                  <a href="https://codepen.io/peterjweb">
+                    <span className="icon fa-2xl has-text-black">
+                      <FontAwesomeIcon icon={faCodepen} />
+                    </span>
+                    <span className="ml-4 has-text-black">Join Me</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

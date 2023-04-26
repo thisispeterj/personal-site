@@ -12,14 +12,14 @@ import {
 const IndexPage = () => {
   return (
     <Layout>
-      <section className="hero is-primary">
+      <section className="hero home-primary has-text-grey-lighter">
         <div className="hero-head"></div>
         <div className="hero-body columns is-vcentered">
           <div className="column is-1">
             <ul>
               <li className="mb-5">
-                <a href="https://github.com/peterjweb/" className="is-link">
-                  <span className="icon fa-2xl">
+                <a href="https://github.com/peterjweb/">
+                  <span className="icon fa-2xl has-text-grey-lighter">
                     <FontAwesomeIcon icon={faGithub} />
                   </span>
                 </a>
@@ -29,14 +29,14 @@ const IndexPage = () => {
                   href="https://www.linkedin.com/in/peterjweb/"
                   className="is-link"
                 >
-                  <span className="icon fa-2xl">
+                  <span className="icon fa-2xl has-text-grey-lighter shake">
                     <FontAwesomeIcon icon={faLinkedin} />
                   </span>
                 </a>
               </li>
               <li className="mb-5">
                 <a href="https://codepen.io/peterjweb" className="is-link">
-                  <span className="icon fa-2xl">
+                  <span className="icon fa-2xl has-text-grey-lighter shake">
                     <FontAwesomeIcon icon={faCodepen} />
                   </span>
                 </a>
