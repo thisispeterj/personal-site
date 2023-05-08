@@ -2,7 +2,6 @@ import * as React from 'react'
 import Layout from '../../layouts'
 import Seo from '../../components/seo'
 import '../../styles/global.scss'
-import { StaticImage } from 'gatsby-plugin-image'
 
 const AboutPage = () => {
   return (
