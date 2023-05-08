@@ -16,7 +16,7 @@ const Navbar = () => {
           to="/"
           className="navbar-item is-size-1 is-uppercase has-text-weight-bold"
         >
-          PJ
+          thisispeterj
         </Link>
         <Link>
           <a

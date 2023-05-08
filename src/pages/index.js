@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../layouts/'
 import '../styles/global.scss'
 import Seo from '../components/seo'
+import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -50,10 +51,11 @@ const IndexPage = () => {
             <h2>QA Engineer / Front End Developer</h2>
           </div>
           <div className="column is-4">
-            <img
+            <StaticImage
               className="hero-portrait"
-              src="/assets/images/portrait.jpg"
+              src="../../static/assets/images/portrait.jpg"
               alt="AI generated portrait of Peter Jacobs"
+              placeholder="blurred"
             />
           </div>
         </div>

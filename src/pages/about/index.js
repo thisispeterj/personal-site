@@ -2,6 +2,7 @@ import * as React from 'react'
 import Layout from '../../layouts'
 import Seo from '../../components/seo'
 import '../../styles/global.scss'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const AboutPage = () => {
   return (
@@ -70,38 +71,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="section">
-        <div className="container">
-          <div className="columns">
-            <div className="column">
-              <img
-                alt="Peter Jacobs QA Engineer and Front End Developer"
-                src="/assets/images/peter.jpg"
-              />
-            </div>
-            <div className="column is-one-thirds">
-              <div className="box ">
-                <p>
-                  As a QA engineer I am dedicated to ensuring the highest
-                  quality user experience possible. With a sharp eye for detail
-                  and a passion for testing, I strive to catch any bugs or
-                  glitches before they can impact the site's performance. My
-                  goal is to deliver a seamless and enjoyable browsing
-                  experience for every visitor.
-                </p>
-                <ul>
-                  <li>Name: Peter Jacobs</li>
-                  <li>Email: thisispeterj@gmail.com</li>
-                  <li>Born: March 1985</li>
-                  <li>From: United Kingom</li>
-                  <li>Living: United States | California</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </Layout>
   )
 }

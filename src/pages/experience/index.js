@@ -41,7 +41,7 @@ const workExperience = [
   {
     id: 3,
     company: 'Imageshack Inc.',
-    title: 'QA Engineer',
+    title: 'QA Engineer / Customer Support',
     description: 'Developed web applications using React and Node.js',
     duration: 'Jan 2013 - 2015',
     responsibilities: [
