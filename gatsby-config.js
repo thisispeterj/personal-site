@@ -32,5 +32,11 @@ module.exports = {
         path: `${__dirname}/static/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `static/assets/images/icon.png`,
+      },
+    },
   ],
 }
