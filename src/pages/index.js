@@ -23,6 +23,7 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => {
   const image = getImage(data.file)
+  console.log(data.file)
   return (
     <Layout>
       <section className="hero home-primary has-text-grey-lighter">
@@ -31,7 +32,7 @@ const IndexPage = ({ data }) => {
           <div className="column is-1">
             <ul>
               <li className="mb-5">
-                <a href="https://github.com/peterjweb/">
+                <a href="https://github.com/thisispeterj">
                   <span className="icon fa-2xl has-text-grey-lighter">
                     <FontAwesomeIcon icon={faGithub} />
                   </span>
@@ -39,7 +40,7 @@ const IndexPage = ({ data }) => {
               </li>
               <li className="mb-5">
                 <a
-                  href="https://www.linkedin.com/in/peterjweb/"
+                  href="https://www.linkedin.com/in/thisispeterj/"
                   className="is-link"
                 >
                   <span className="icon fa-2xl has-text-grey-lighter shake">
@@ -48,7 +49,7 @@ const IndexPage = ({ data }) => {
                 </a>
               </li>
               <li className="mb-5">
-                <a href="https://codepen.io/peterjweb" className="is-link">
+                <a href="https://codepen.io/thisispeterj" className="is-link">
                   <span className="icon fa-2xl has-text-grey-lighter shake">
                     <FontAwesomeIcon icon={faCodepen} />
                   </span>
