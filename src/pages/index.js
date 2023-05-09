@@ -2,15 +2,27 @@ import * as React from 'react'
 import Layout from '../layouts/'
 import '../styles/global.scss'
 import Seo from '../components/seo'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
   faLinkedin,
   faCodepen,
 } from '@fortawesome/free-brands-svg-icons'
+import { graphql } from 'gatsby'
 
-const IndexPage = () => {
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "portrait.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED)
+      }
+    }
+  }
+`
+
+const IndexPage = ({ data }) => {
+  const image = getImage(data.file)
   return (
     <Layout>
       <section className="hero home-primary has-text-grey-lighter">
@@ -51,11 +63,10 @@ const IndexPage = () => {
             <h2>QA Engineer / Front End Developer</h2>
           </div>
           <div className="column is-4">
-            <StaticImage
+            <GatsbyImage
               className="hero-portrait"
-              src="../../static/assets/images/portrait.jpg"
+              image={image}
               alt="AI generated portrait of Peter Jacobs"
-              placeholder="blurred"
             />
           </div>
         </div>

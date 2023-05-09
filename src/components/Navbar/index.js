@@ -12,10 +12,7 @@ const Navbar = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand ml-6">
-        <Link
-          to="/"
-          className="navbar-item is-size-1 is-uppercase has-text-weight-bold"
-        >
+        <Link to="/" className="navbar-item is-size-1">
           thisispeterj
         </Link>
         <Link>

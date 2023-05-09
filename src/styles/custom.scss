@@ -1,9 +1,12 @@
 // Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
-$brand-font: 'Secular One', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+// $brand-font: 'Secular One', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 $hero-font: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+$brand-font: 'Comfortaa', 'cursive';
 
 // Colors
 $fire-red: #bf4949;
@@ -15,18 +18,6 @@ $primary: $fire-red;
 .home-primary {
   background-color: #bf4949;
   height: 100vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .hero-title {
