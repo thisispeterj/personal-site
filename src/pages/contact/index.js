@@ -87,7 +87,7 @@ const ContactPage = () => {
               <h1 className="title mb-6">Follow Me</h1>
               <ul>
                 <li className="mb-6">
-                  <a href="https://github.com/peterjweb/">
+                  <a href="https://github.com/thisispeterj/">
                     <span className="icon fa-2xl has-text-black">
                       <FontAwesomeIcon icon={faGithub} />
                     </span>
@@ -95,7 +95,7 @@ const ContactPage = () => {
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="https://www.linkedin.com/in/peterjweb/">
+                  <a href="https://www.linkedin.com/in/thisispeterj/">
                     <span className="icon fa-2xl has-text-black">
                       <FontAwesomeIcon icon={faLinkedin} />
                     </span>
@@ -103,7 +103,7 @@ const ContactPage = () => {
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="https://codepen.io/peterjweb">
+                  <a href="https://codepen.io/thisispeterj">
                     <span className="icon fa-2xl has-text-black">
                       <FontAwesomeIcon icon={faCodepen} />
                     </span>
