@@ -2,13 +2,24 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../layouts'
 import Seo from '../../components/seo'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faReact,
+  faNodeJs,
+  faCss3,
+  faJs,
+  faHtml5,
+  faSass,
+  faCodepen,
+  faJenkins,
+} from '@fortawesome/free-brands-svg-icons'
 
 const ProjectsPage = ({ data }) => {
   return (
     <Layout>
       <section className="container is-max-desktop p-6">
         <h1 className="title is-1">My Projects</h1>
-        <div className="tile-container columns is-multiline">
+        {/* <div className="tile-container columns is-multiline">
           {data.allMdx.nodes.map((node) => (
             <article
               key={node.id}
@@ -24,6 +35,34 @@ const ProjectsPage = ({ data }) => {
               </div>
             </article>
           ))}
+        </div> */}
+
+        <div className="card-container">
+          <div className="card">
+            <div className="imgplaceholder"></div>
+            <div className="card-body">
+              <div className="title">
+                <h3>Coming Soon!</h3>
+              </div>
+              <div className="excerpt">
+                <p>The first project will be available soon...</p>
+              </div>
+              <div className="tech-container">
+                <div className="tech fa-2xl">
+                  <FontAwesomeIcon icon={faReact} />
+                </div>
+                <div className="tech fa-2xl">
+                  <FontAwesomeIcon icon={faNodeJs} />
+                </div>
+                <div className="tech fa-2xl">
+                  <FontAwesomeIcon icon={faCss3} />
+                </div>
+                <div className="tech fa-2xl">
+                  <FontAwesomeIcon icon={faJs} />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>

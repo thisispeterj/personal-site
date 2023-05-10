@@ -3,6 +3,8 @@ import Layout from '../../layouts'
 import Scrollspy from 'react-scrollspy'
 import Seo from '../../components/seo'
 import '../../styles/global.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 const workExperience = [
   {
@@ -112,7 +114,10 @@ const ExperiencePage = () => {
                 </h3>
                 <ul>
                   {activeWorkExperience.responsibilities.map((resp) => (
-                    <li key={resp}>{resp}</li>
+                    <li classname="experience-item" key={resp}>
+                      <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
+                      {resp}
+                    </li>
                   ))}
                 </ul>
               </div>

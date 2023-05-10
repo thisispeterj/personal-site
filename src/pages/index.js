@@ -13,7 +13,7 @@ import { graphql } from 'gatsby'
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "portrait.jpg" }) {
+    file(relativePath: { eq: "peterportrait.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED)
       }
@@ -23,7 +23,6 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => {
   const image = getImage(data.file)
-  console.log(data.file)
   return (
     <Layout>
       <section className="hero home-primary has-text-grey-lighter">
