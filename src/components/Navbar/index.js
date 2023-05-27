@@ -5,32 +5,35 @@ import Resumebtn from '../Resumebtn'
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false)
 
+  const handleToggle = () => {
+    setIsActive(!isActive)
+  }
+
   return (
-    <nav
-      className="navbar is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div className="navbar-brand ml-6">
-        <Link to="/" className="navbar-item is-size-1">
+    <nav className="navbar container is-max-desktop">
+      <div className="navbar-brand">
+        <Link to="/" id="navbar-logo" className="navbar-item is-size-1">
           thisispeterj
         </Link>
-        <Link>
-          <a
-            role="button"
-            className={`navbar-burger ${isActive ? 'is-active' : ''}`}
-            aria-label="menu"
-            aria-expanded="false"
-            onClick={() => setIsActive(!isActive)}
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </Link>
+        <a
+          role="button"
+          className={`navbar-burger ${isActive ? 'is-active' : ''}`}
+          aria-label="menu"
+          aria-expanded="false"
+          onClick={handleToggle}
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
-        <div className="navbar-end mr-6">
+      <div className="navbar-end">
+        <div
+          id="navMenu"
+          className={`has-text-grey-darker navbar-menu navMenu ${
+            isActive ? 'is-active' : 'is-hidden-mobile'
+          }`}
+        >
           <Link to="../about" className="navbar-item">
             About
           </Link>

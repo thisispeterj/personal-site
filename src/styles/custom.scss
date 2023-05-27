@@ -20,14 +20,19 @@ i {
 // Colors
 $fire-red: #bf4949;
 $primary: $fire-red;
-body {
-  background-color: $fire-red;
-}
 // Navigation
-
+#navbar-logo:hover {
+  color: $fire-red;
+}
+#navMenu a:hover {
+  background-color: #fff;
+  color: #000;
+}
+#navMenu a:active {
+  color: $fire-red;
+}
 // Home Page
 .home-primary {
-  background-color: #bf4949;
   height: 100vh;
 }
 
