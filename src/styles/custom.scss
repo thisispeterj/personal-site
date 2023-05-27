@@ -20,6 +20,38 @@ i {
 // Colors
 $fire-red: #bf4949;
 $primary: $fire-red;
+
+// Animation
+@keyframes slideInRight {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+h2.animated-role {
+  margin-top: 10px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  background-color: #888;
+  border-radius: 8px;
+}
+.animated-role {
+  animation: fadeIn 1s ease-in;
+}
+
 // Navigation
 #navbar-logo:hover {
   color: $fire-red;
@@ -32,10 +64,6 @@ $primary: $fire-red;
   color: $fire-red;
 }
 // Home Page
-.home-primary {
-  height: 100vh;
-}
-
 .hero-title h1 {
   font-size: 5rem;
   text-transform: uppercase;
@@ -46,12 +74,15 @@ $primary: $fire-red;
 .hero-title h2 {
   font-size: 1.5rem;
 }
-
+.animated-role {
+  font-size: 2rem;
+}
 .hero-portrait {
   border-left-color: #e85555;
   border-left-style: groove;
   border-left-width: 20px;
-  box-shadow: 13px 11px 10px #792020;
+  box-shadow: 5px 8px 10px #792020;
+  border-radius: 5px;
 }
 
 // About Page
